@@ -1,7 +1,8 @@
-import 'dart:ffi';
-import 'dart:ui';
+
+
 
 import 'package:flutter/material.dart';
+import 'package:my_apps/Grid.dart';
 
 void main() {
   runApp(const MyApp());
@@ -73,6 +74,9 @@ drawer: Drawer(
       ListTile(
         leading: Icon(Icons.message),
         title: Text("Message"),
+        onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> GList()));
+        },
       ),
       ListTile(
         leading: Icon(Icons.account_circle),
